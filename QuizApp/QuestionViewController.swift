@@ -11,13 +11,13 @@ import UIKit
 class QuestionViewController: UIViewController {
     private var question = String()
     private var options = [String]()
-    private var selection: ((String) -> Void)? = nil
+    private var selection: (([String]) -> Void)? = nil
     private let reuseIdentifier = "Cell"
     
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    convenience init(question: String, options: [String], selection: @escaping (String) -> Void = {_ in }) {
+    convenience init(question: String, options: [String], selection: @escaping ([String]) -> Void = {_ in }) {
         self.init()
         self.question = question
         self.options = options
@@ -26,6 +26,7 @@ class QuestionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         headerLabel.text = question
         self.tableView.dataSource = self
         self.tableView.delegate = self
@@ -54,6 +55,17 @@ extension QuestionViewController: UITableViewDataSource {
 
 extension QuestionViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.selection?(options[indexPath.row])
+        self.selection?(selectionOptions(in: tableView))
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        if tableView.allowsMultipleSelection {
+            self.selection?(selectionOptions(in: tableView))
+        }
+    }
+    
+    private func selectionOptions(in tableView: UITableView) -> [String] {
+        guard let indexPaths = tableView.indexPathsForSelectedRows else { return [] }
+        return indexPaths.map { options[$0.row] }
     }
 }
