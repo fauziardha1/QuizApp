@@ -32,7 +32,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="IgI-n3-lR1"/>
+                        <outlet property="dataSource" destination="-1" id="Yr4-f6-qih"/>
                     </connections>
                 </tableView>
             </subviews>
