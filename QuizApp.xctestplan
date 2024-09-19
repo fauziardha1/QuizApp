@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "D1EFE857-96CC-45EA-95D0-08F50E97E930",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:QuizApp.xcodeproj",
+        "identifier" : "05D2AF012C6BC58B007D87EA",
+        "name" : "QuizAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}
