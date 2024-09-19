@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		055E89462C9BEAC200CD861C /* CorrectAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 055E89452C9BEAC200CD861C /* CorrectAnswerCell.xib */; };
 		055E89492C9C1D1C00CD861C /* WrongAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 055E89482C9C1D1C00CD861C /* WrongAnswerCell.xib */; };
+		055E894B2C9C315D00CD861C /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055E894A2C9C315D00CD861C /* UITableViewCellExtensions.swift */; };
+		055E894D2C9C31A400CD861C /* PresentableAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055E894C2C9C31A400CD861C /* PresentableAnswer.swift */; };
+		055E894F2C9C31C700CD861C /* CorrectAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055E894E2C9C31C700CD861C /* CorrectAnswerCell.swift */; };
+		055E89512C9C31E200CD861C /* WrongAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055E89502C9C31E200CD861C /* WrongAnswerCell.swift */; };
 		05D2AEF02C6BC589007D87EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D2AEEF2C6BC589007D87EA /* AppDelegate.swift */; };
 		05D2AEF92C6BC58B007D87EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D2AEF82C6BC58B007D87EA /* Assets.xcassets */; };
 		05D2AEFC2C6BC58B007D87EA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 05D2AEFB2C6BC58B007D87EA /* Base */; };
@@ -36,6 +40,10 @@
 		055E89452C9BEAC200CD861C /* CorrectAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CorrectAnswerCell.xib; sourceTree = "<group>"; };
 		055E89472C9BEF0400CD861C /* QuizApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = QuizApp.xctestplan; sourceTree = "<group>"; };
 		055E89482C9C1D1C00CD861C /* WrongAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WrongAnswerCell.xib; sourceTree = "<group>"; };
+		055E894A2C9C315D00CD861C /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
+		055E894C2C9C31A400CD861C /* PresentableAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentableAnswer.swift; sourceTree = "<group>"; };
+		055E894E2C9C31C700CD861C /* CorrectAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectAnswerCell.swift; sourceTree = "<group>"; };
+		055E89502C9C31E200CD861C /* WrongAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongAnswerCell.swift; sourceTree = "<group>"; };
 		05D2AEEC2C6BC589007D87EA /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D2AEEF2C6BC589007D87EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05D2AEF82C6BC58B007D87EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,6 +103,10 @@
 				05D2AEEF2C6BC589007D87EA /* AppDelegate.swift */,
 				05D2AF212C6BC778007D87EA /* QuestionViewController.swift */,
 				AC1DCBF12C80673900219D38 /* ResultsViewController.swift */,
+				055E89502C9C31E200CD861C /* WrongAnswerCell.swift */,
+				055E894E2C9C31C700CD861C /* CorrectAnswerCell.swift */,
+				055E894C2C9C31A400CD861C /* PresentableAnswer.swift */,
+				055E894A2C9C315D00CD861C /* UITableViewCellExtensions.swift */,
 				055E89482C9C1D1C00CD861C /* WrongAnswerCell.xib */,
 				055E89452C9BEAC200CD861C /* CorrectAnswerCell.xib */,
 				AC1DCBF32C80680900219D38 /* ResultsViewController.xib */,
@@ -223,7 +235,11 @@
 			files = (
 				05D2AF222C6BC778007D87EA /* QuestionViewController.swift in Sources */,
 				05D2AEF02C6BC589007D87EA /* AppDelegate.swift in Sources */,
+				055E89512C9C31E200CD861C /* WrongAnswerCell.swift in Sources */,
 				AC1DCBF22C80673900219D38 /* ResultsViewController.swift in Sources */,
+				055E894D2C9C31A400CD861C /* PresentableAnswer.swift in Sources */,
+				055E894F2C9C31C700CD861C /* CorrectAnswerCell.swift in Sources */,
+				055E894B2C9C315D00CD861C /* UITableViewCellExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
